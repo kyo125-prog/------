@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,7 @@
         });
 
         // Message setup
-        const lines = ["HAPPY", "BIRTHDAY!", "to You"];
+        const lines = ["HAPPY", "INTAL'S", "BIRTHDAY"];
         let letters = [];
 
         const opts = {
