@@ -59,7 +59,7 @@
         });
 
         // Message setup
-        const lines = ["HAPPY", "BIRTHDAY!", "INTAL"];
+        const lines = ["HAPPY", "BIRTHDAY", "INTAL"];
         let letters = [];
 
         const opts = {
