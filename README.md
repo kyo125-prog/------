@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,21 +24,25 @@
         }
         #overlay {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #fff;
             text-align: center;
             cursor: pointer;
             z-index: 10;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.85);
             padding: 20px 40px;
             border-radius: 10px;
             border: 1px solid #ff69b4;
             box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+            user-select: none;
         }
     </style>
 </head>
 <body>
 
-    <div id="overlay">Click anywhere to start 🎉</div>
+    <div id="overlay">Click dayun para mag start HAHAHA 🎉</div>
     <canvas id="canvas"></canvas>
 
     <script>
@@ -56,7 +59,7 @@
         });
 
         // Message setup
-        const lines = ["HAPPY", "INTAL'S", "BIRTHDAY"];
+        const lines = ["HAPPY", "BIRTHDAY!", "INTAL"];
         let letters = [];
 
         const opts = {
@@ -268,7 +271,7 @@
             requestAnimationFrame(animate);
         }
 
-        // Setup & Start on user interaction (browser audio requirement)
+        // Setup & Start on user interaction
         calculateTargetPositions();
 
         document.body.addEventListener('click', () => {
